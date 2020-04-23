@@ -10,6 +10,7 @@ public class OrgansInstantinate : MonoBehaviour
     public GameObject instePrim;
     public GameObject insteGros;
     public GameObject cervell;
+    public GameObject liver;
 
 
 
@@ -20,6 +21,7 @@ public class OrgansInstantinate : MonoBehaviour
     public Transform posiIntestiPrim;
     public Transform posiIntestiGros;
     public Transform posiCervell;
+    public Transform posiLiver;
 
 
 
@@ -33,6 +35,7 @@ public class OrgansInstantinate : MonoBehaviour
             Instantiate(instePrim, posiIntestiPrim.position, Quaternion.identity);
             Instantiate(insteGros, posiIntestiGros.position, Quaternion.identity);
             Instantiate(cervell, posiCervell.position, Quaternion.identity);
+            Instantiate(liver, posiLiver.position, Quaternion.identity);
 
         }
 
