@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp-Editor.dll:
     - Invector.vCharacterController.vEditorStartupPrefs
+    - ReadmeEditor
     Assembly-CSharp.dll:
     - DoorActiviation
     - DoorMoviment
@@ -14,9 +15,11 @@ ScriptsOnlyBuild:
     - InventarioManager
     - InventarioObjetoInterface
     - InventarioObjetoRecogible
+    - OrgansInstantinate
     - PickupObject
     - PlataformActivation
     - PlatformMoviment
+    - Readme
     - RespawnActivation
     - RespawnMoviment
     - canvas
@@ -29,6 +32,7 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -129,23 +133,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12120}
     - Class: 114
-      Script: {instanceID: 12342}
+      Script: {instanceID: 12330}
     - Class: 114
-      Script: {instanceID: 12432}
+      Script: {instanceID: 12344}
     - Class: 114
-      Script: {instanceID: 12648}
+      Script: {instanceID: 12434}
     - Class: 114
-      Script: {instanceID: 12674}
+      Script: {instanceID: 12650}
     - Class: 114
-      Script: {instanceID: 12850}
+      Script: {instanceID: 12676}
     - Class: 114
-      Script: {instanceID: 12962}
+      Script: {instanceID: 12852}
     - Class: 114
-      Script: {instanceID: 13048}
+      Script: {instanceID: 12964}
     - Class: 114
-      Script: {instanceID: 13052}
+      Script: {instanceID: 13050}
     - Class: 114
-      Script: {instanceID: 23062}
+      Script: {instanceID: 13054}
+    - Class: 114
+      Script: {instanceID: 26906}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1015,6 +1021,12 @@ ScriptsOnlyBuild:
     className: AudioTrack
   - hash:
       serializedVersion: 2
+      Hash: 6036bad6cf2e64bed69326e5d173cd05
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OrgansInstantinate
+  - hash:
+      serializedVersion: 2
       Hash: ae83e830e7a90c0aff918c4c2e520825
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -1250,4 +1262,4 @@ ScriptsOnlyBuild:
   platform: 5
   scenePathNames:
   - Assets/Scenes/Organ-Explorer1.0.unity
-  playerPath: D:/Documentos/GitHub/explorerOnly/Organ-Explorer/Build/Organ-Explorer.exe
+  playerPath: D:/Documentos/GitHub/explorerOnly/Organ-Explorer/Build/OrganV2/Organ-Explorer.exe
