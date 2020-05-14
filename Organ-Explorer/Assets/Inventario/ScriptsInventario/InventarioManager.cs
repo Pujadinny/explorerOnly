@@ -56,6 +56,7 @@ public class InventarioManager : MonoBehaviour {
                 UpdateInventario();         // actualizar el inventari
                 return;                 //sino  troba res
             }
+            Debug.Log(id);
         }
         Debug.LogError("No puc eliminar l'objecte"); // fes un debug.logerror que digui "No es pot elimar el objecte" :D
     }
