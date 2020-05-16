@@ -89,7 +89,7 @@ public class InventarioManager : MonoBehaviour {
                 ObjetoInventarioId o = inventario[i]; // agafem el objecte del inventari 
                 pool[i].sprite.sprite = baseDatos.baseDatos[o.id].sprite; // agafem el SCRIPT DE IMATGE (fet per unity) i agafem el Sprite
                 pool[i].cantidad.text = o.cantidad.ToString(); //llavors la quantitat, és a dir el texte
-                pool[i].id = i;
+               // pool[i].id = i;
 
                 pool[i].boton.onClick.RemoveAllListeners();  //li treiem tots els liseners que tingui i llavors
                 pool[i].boton.onClick.AddListener(() => gameObject.SendMessage(baseDatos.baseDatos[o.id].funcion, SendMessageOptions.DontRequireReceiver)); //el boto
@@ -114,8 +114,8 @@ public class InventarioManager : MonoBehaviour {
                 ObjetoInventarioId o = inventario[i]; //agafem el objecte del inventari 
                 pool[i].sprite.sprite = baseDatos.baseDatos[o.id].sprite; // agafem el sprite
                 pool[i].cantidad.text = o.cantidad.ToString(); //llavors la quantitat
-                pool[i].id = i; 
-                pool[i].manager = this;
+                //pool[i].id = i; 
+                //pool[i].manager = this;
 
                 pool[i].boton.onClick.RemoveAllListeners(); //li treiem tots els liseners que tingui i llavors 
                 pool[i].boton.onClick.AddListener(() => gameObject.SendMessage(baseDatos.baseDatos[o.id].funcion, SendMessageOptions.DontRequireReceiver)); //el boto
@@ -128,6 +128,11 @@ public class InventarioManager : MonoBehaviour {
 
     public void Pocion()   //funcio que fa que crida a la funció que elimina objectes
     {
-        DeleteInvetario(0, 1);
+        DeleteInvetario(0, 1);  //funcio de destruir PERO QUIN INT (es refereix el numero de la base de dades, és a dir l'objecte)
+        DeleteInvetario(1, 1);
+        DeleteInvetario(2, 1);
+        DeleteInvetario(3, 1);
+        DeleteInvetario(4, 1);
+        DeleteInvetario(5, 1);
     }
 }

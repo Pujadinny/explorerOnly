@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Data
   m_EditorClassIdentifier: 
   baseDatos:
-  - nombre: cor
+  - nombre: Cor
     sprite: {fileID: 21300000, guid: b6a303b06fedf934eaa3a8967322fcf4, type: 3}
     uso: 0
     funcion: Pocion
@@ -21,7 +21,7 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: 6da3e2368d5c51149988644da1b46826, type: 3}
     uso: 0
     funcion: Pocion
-  - nombre: cervell
+  - nombre: Cervell
     sprite: {fileID: 21300000, guid: de862ea12b3ed154a8c72608fda42ab6, type: 3}
     uso: 0
     funcion: Pocion

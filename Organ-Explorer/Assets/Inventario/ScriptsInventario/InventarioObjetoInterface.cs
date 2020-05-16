@@ -10,9 +10,9 @@ public class InventarioObjetoInterface : MonoBehaviour // IBeginDragHandler, IDr
     public Text cantidad;
     public Image sprite;
     public Button boton;
-    public int id;
+    //public int id;
 
-    public InventarioManager manager;
+   //public InventarioManager manager;
 
    // public static InventarioObjetoInterface arrastrando;
 
