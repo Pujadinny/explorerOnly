@@ -2,10 +2,11 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp-Editor.dll:
     - Invector.vCharacterController.vEditorStartupPrefs
-    - ReadmeEditor
     Assembly-CSharp.dll:
+    - Controlador
     - DoorActiviation
     - DoorMoviment
+    - DoorOpen
     - Invector.Utils.vComment
     - Invector.vCharacterController.vThirdPersonController
     - Invector.vCharacterController.vThirdPersonInput
@@ -16,20 +17,22 @@ ScriptsOnlyBuild:
     - InventarioObjetoInterface
     - InventarioObjetoRecogible
     - OrgansInstantinate
-    - PickupObject
     - PlataformActivation
     - PlatformMoviment
-    - Readme
+    - PuertaMoving
     - RespawnActivation
     - RespawnMoviment
+    - RespawnSalaPlataformasVolants
+    - Teletransportador
     - canvas
     - vThirdPersonCamera
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimatorControllerTool
+    - UnityEditor.Graphs.AnimationStateMachine.StateMachineNode
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -47,7 +50,56 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Shadow
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/Organ-Explorer1.0.unity:
+    Assets/Scenes/Menu.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9804}
+    - Class: 114
+      Script: {instanceID: 10114}
+    - Class: 114
+      Script: {instanceID: 10176}
+    - Class: 114
+      Script: {instanceID: 10812}
+    - Class: 114
+      Script: {instanceID: 11502}
+    - Class: 114
+      Script: {instanceID: 12346}
+    - Class: 114
+      Script: {instanceID: 12966}
+    - Class: 114
+      Script: {instanceID: 29304}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 329
+      Script: {instanceID: 0}
+    Assets/Scenes/TheOrganExplorer.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -91,13 +143,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9804}
     - Class: 114
-      Script: {instanceID: 9952}
+      Script: {instanceID: 9886}
     - Class: 114
-      Script: {instanceID: 10112}
+      Script: {instanceID: 9954}
     - Class: 114
-      Script: {instanceID: 10174}
+      Script: {instanceID: 10114}
     - Class: 114
-      Script: {instanceID: 10262}
+      Script: {instanceID: 10176}
     - Class: 114
       Script: {instanceID: 10264}
     - Class: 114
@@ -117,41 +169,45 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10812}
     - Class: 114
-      Script: {instanceID: 11030}
+      Script: {instanceID: 11028}
     - Class: 114
-      Script: {instanceID: 11148}
+      Script: {instanceID: 11146}
     - Class: 114
-      Script: {instanceID: 11274}
+      Script: {instanceID: 11270}
     - Class: 114
-      Script: {instanceID: 11288}
+      Script: {instanceID: 11284}
     - Class: 114
-      Script: {instanceID: 11400}
+      Script: {instanceID: 11396}
     - Class: 114
-      Script: {instanceID: 11506}
+      Script: {instanceID: 11502}
     - Class: 114
-      Script: {instanceID: 11992}
+      Script: {instanceID: 11894}
     - Class: 114
-      Script: {instanceID: 12120}
+      Script: {instanceID: 11934}
     - Class: 114
-      Script: {instanceID: 12330}
+      Script: {instanceID: 11978}
     - Class: 114
-      Script: {instanceID: 12344}
+      Script: {instanceID: 11994}
     - Class: 114
-      Script: {instanceID: 12434}
+      Script: {instanceID: 12122}
     - Class: 114
-      Script: {instanceID: 12650}
+      Script: {instanceID: 12332}
     - Class: 114
-      Script: {instanceID: 12676}
+      Script: {instanceID: 12346}
     - Class: 114
-      Script: {instanceID: 12852}
+      Script: {instanceID: 12436}
     - Class: 114
-      Script: {instanceID: 12964}
+      Script: {instanceID: 12652}
     - Class: 114
-      Script: {instanceID: 13050}
+      Script: {instanceID: 12678}
     - Class: 114
-      Script: {instanceID: 13054}
+      Script: {instanceID: 12854}
     - Class: 114
-      Script: {instanceID: 26906}
+      Script: {instanceID: 12966}
+    - Class: 114
+      Script: {instanceID: 13052}
+    - Class: 114
+      Script: {instanceID: 13056}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -175,8 +231,6 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
     - Class: 258
-      Script: {instanceID: 0}
-    - Class: 329
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -233,6 +287,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: 0167e45dcbf629b45cafe97104b9e816
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RespawnSalaPlataformasVolants
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -335,12 +395,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Image
-  - hash:
-      serializedVersion: 2
-      Hash: 0c5ab4b379276984eb55cacd99b53d1b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CharacterSkinController
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -607,12 +661,6 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: ba58bb04e7cbbdeb111979d3a2a16792
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MovementInput
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -691,12 +739,6 @@ ScriptsOnlyBuild:
     className: CameraTopDownPan
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: patata
-  - hash:
-      serializedVersion: 2
       Hash: bd543bad7f9f6262f10595aadb130d22
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -757,7 +799,7 @@ ScriptsOnlyBuild:
     className: RemoteTestResultSender
   - hash:
       serializedVersion: 2
-      Hash: 83abb8b7823ec76bfe852be957456f0b
+      Hash: 8abd233461b9e6e62258c59dee6d8aa3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: InventarioObjetoInterface
@@ -895,6 +937,12 @@ ScriptsOnlyBuild:
     className: HorizontalLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Teletransportador
+  - hash:
+      serializedVersion: 2
       Hash: 35a9693c388776aaf487636491a20f11
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -931,10 +979,22 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
+      Hash: 9f19b2722c6b1740baa4ee36f91480ba
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PuertaMoving
+  - hash:
+      serializedVersion: 2
       Hash: 1e3d6222ff533d213aab144eb854a53b
     assemblyName: Cinemachine.dll
     namespaceName: 
     className: CinemachineTouchInputMapper
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DoorOpen
   - hash:
       serializedVersion: 2
       Hash: fc96211713513ee3d1b3ccba2d817b1d
@@ -1259,7 +1319,14 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Controlador
   platform: 5
   scenePathNames:
-  - Assets/Scenes/Organ-Explorer1.0.unity
-  playerPath: D:/Documentos/GitHub/explorerOnly/Organ-Explorer/Build/OrganV2/Organ-Explorer.exe
+  - Assets/Scenes/Menu.unity
+  - Assets/Scenes/TheOrganExplorer.unity
+  playerPath: D:/Documentos/GitHub/explorerOnly/Organ-Explorer/Build/Organ-Explorer.exe
