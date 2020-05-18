@@ -5,12 +5,12 @@ using UnityEngine;
 public class OrgansInstantinate : MonoBehaviour
 {
     //ORGANS 
-    public GameObject cor;
-    public GameObject pulmo;
-    public GameObject instePrim;
-    public GameObject insteGros;
-    public GameObject cervell;
-    public GameObject liver;
+    //public GameObject cor;
+    //public GameObject pulmo;
+    //public GameObject instePrim;
+    //public GameObject insteGros;
+    //public GameObject cervell;
+    //public GameObject liver;
 
     //Boton organos
    // public GameObject BotonCor;
@@ -25,12 +25,12 @@ public class OrgansInstantinate : MonoBehaviour
    // bool corbool;
 
     //POSI organs
-    public Transform posiCor;
-    public Transform posiPulmo;
-    public Transform posiIntestiPrim;
-    public Transform posiIntestiGros;
-    public Transform posiCervell;
-    public Transform posiLiver;
+    //public Transform posiCor;
+    //public Transform posiPulmo;
+    //public Transform posiIntestiPrim;
+    //public Transform posiIntestiGros;
+    //public Transform posiCervell;
+    //public Transform posiLiver;
 
 
 
@@ -39,20 +39,20 @@ public class OrgansInstantinate : MonoBehaviour
         
     
     // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.K))
-        {
+    //void Update()
+    //{
+        //if (Input.GetKeyDown(KeyCode.K))
+        //{
 
-            Instantiate(cor, posiCor.position, Quaternion.identity);
-            Instantiate(instePrim, posiIntestiPrim.position, Quaternion.identity);
-            Instantiate(insteGros, posiIntestiGros.position, Quaternion.identity);
-            Instantiate(cervell, posiCervell.position, Quaternion.identity);
-            Instantiate(liver, posiLiver.position, Quaternion.identity);
+            //Instantiate(cor, posiCor.position, Quaternion.identity);
+            //Instantiate(instePrim, posiIntestiPrim.position, Quaternion.identity);
+            //Instantiate(insteGros, posiIntestiGros.position, Quaternion.identity);
+            //Instantiate(cervell, posiCervell.position, Quaternion.identity);
+            //Instantiate(liver, posiLiver.position, Quaternion.identity);
 
-        }
+        //}
 
-    }
+    //}
 }
    
         
