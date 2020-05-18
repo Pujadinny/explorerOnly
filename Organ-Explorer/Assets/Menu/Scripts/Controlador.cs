@@ -13,7 +13,7 @@ public class Controlador : MonoBehaviour
         print("Benvingut al Organ Explorer");
         SceneManager.LoadScene(nombre);
     }
-  public void Exit() //funcio de sortir del Game
+    public void Exit() //funcio de sortir del Game
     {
         print("Adeu fins una altre");
         Application.Quit();
