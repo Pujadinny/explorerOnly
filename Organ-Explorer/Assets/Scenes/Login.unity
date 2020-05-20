@@ -698,8 +698,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   items: []
-  inputNomUsu: PATATA
-  inputPassUsu: patatin
+  inputNomUsu: ignasi
+  inputPassUsu: gran
 --- !u!1 &633781341
 GameObject:
   m_ObjectHideFlags: 0

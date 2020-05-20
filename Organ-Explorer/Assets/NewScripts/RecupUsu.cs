@@ -9,7 +9,7 @@ public class RecupUsu : MonoBehaviour
     public string inputPassUsu; // variable string entrada de la contrassenya del usuari
 
 
-    string LoginURL = "http://http://ec2-18-210-22-233.compute-1.amazonaws.com/~edi/login.php"; //crida al php servidor
+    string LoginURL = "http://ec2-18-210-22-233.compute-1.amazonaws.com/~edi/login.php"; //crida al php servidor
    
 
     /*void Start()  
@@ -33,10 +33,10 @@ public class RecupUsu : MonoBehaviour
         string itemsDataString = www.text;
         items = itemsDataString.Split('#');
 
-        print(itemsDataString);
-        print(items[0]);
+        //print(itemsDataString);
+        //print(items[0]);
 
-         /*print(GetDataValue(items[0], "nom:"));
+         print(GetDataValue(items[0], "nom:"));
          print(GetDataValue(items[1], "passw:"));
          print(GetDataValue(items[2], "org0:"));
          print(GetDataValue(items[3], "org1:"));
@@ -47,7 +47,7 @@ public class RecupUsu : MonoBehaviour
          print(GetDataValue(items[8], "org6:"));
          print(GetDataValue(items[9], "org7:"));
          print(GetDataValue(items[10], "org8:"));
-         print(GetDataValue(items[11], "temps:")); */
+         print(GetDataValue(items[11], "temps:")); 
     }
     string GetDataValue(string data, string index)
     {
