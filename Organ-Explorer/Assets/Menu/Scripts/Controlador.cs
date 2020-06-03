@@ -20,6 +20,8 @@ public class Controlador : MonoBehaviour
 
     }
 
+ 
+
     
   //public void Restart()
    // {
