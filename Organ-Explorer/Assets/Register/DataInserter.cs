@@ -19,6 +19,7 @@ public class DataInserter : MonoBehaviour {
 	{
 
 		CreateUser(inputUserName.text, inputPassword.text);
+		print("El usuari s'ha creat");
 	}
 	public void CreateUser(string username, string password)
 	{
@@ -27,5 +28,6 @@ public class DataInserter : MonoBehaviour {
 		form.AddField("passwordPostAlta", password);
 
 		WWW www = new WWW(CreateUserURL, form);
+		print("Usuari Creat");
 	}
 }
