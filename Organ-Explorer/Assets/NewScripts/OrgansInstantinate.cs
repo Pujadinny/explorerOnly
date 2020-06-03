@@ -29,16 +29,14 @@ public class OrgansInstantinate : MonoBehaviour
      public Transform posiLiver;
 
 
-    
-    
-        
-    
 
+
+    
 
 
 
     // Update is called once per frame
-   public void Patata()
+    public void Patata()
     {
         
         
