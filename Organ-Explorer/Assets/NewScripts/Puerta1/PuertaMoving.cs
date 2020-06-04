@@ -13,12 +13,12 @@ public class PuertaMoving : MonoBehaviour
 
     private void OnTriggerEnter(Collider trigger)
     {
-        MoureDoor();
+        MoureDoor(); //Al tocar el botó executa la següent funció
     }
 
     public void MoureDoor()
     {
 
-        move.Movedoor1();
+        move.Movedoor1();  //Fa que l'altre script passi el status de la porta a 1
     }
 }
