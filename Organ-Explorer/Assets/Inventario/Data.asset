@@ -33,19 +33,7 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: ba37f5a83fe64364b8f9c243d3f52941, type: 3}
     uso: 0
     funcion: 
-  - nombre: Vejiga
-    sprite: {fileID: 21300000, guid: 04faf84e903ac694aadc58e1af7b85a1, type: 3}
-    uso: 0
-    funcion: 
-  - nombre: "Ri\xF1ons"
-    sprite: {fileID: 21300000, guid: 99907332d3f716046912126876d3e205, type: 3}
-    uso: 0
-    funcion: 
-  - nombre: Higado
-    sprite: {fileID: 21300000, guid: 437c8c9bf1d97ab4d8e35f2cc51a0020, type: 3}
-    uso: 0
-    funcion: 
-  - nombre: Bazo
-    sprite: {fileID: 21300000, guid: 997e07b9d726edf479591cfc2e38e77c, type: 3}
+  - nombre: Fetge
+    sprite: {fileID: 21300000, guid: 7c2d235b15dbbea47bb2d8cf95a7c0ae, type: 3}
     uso: 0
     funcion: 

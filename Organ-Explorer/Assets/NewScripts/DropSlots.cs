@@ -19,7 +19,7 @@ public class DropSlots : MonoBehaviour, IDropHandler
     {
       if (!item)
         {
-            item = DragHandler.objectDragging;
+            item = DragHandler.itemDragging;
             item.transform.SetParent(transform);
             item.transform.position = transform.position;
         }

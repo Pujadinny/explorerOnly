@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 public class DragHandler : MonoBehaviour , IDragHandler, IEndDragHandler , IBeginDragHandler
 {
 
-    public static GameObject objectDragging;
+    public static GameObject itemDragging;
 
     Vector3 posiStart;
     Transform startParent;
@@ -23,7 +23,7 @@ public class DragHandler : MonoBehaviour , IDragHandler, IEndDragHandler , IBegi
     public void OnBeginDrag(PointerEventData eventData)    // Interfas de IBegind DragHandler 
     {
         Debug.Log("BEGIN");
-        objectDragging = gameObject;
+        itemDragging = gameObject;
         posiStart = transform.position;
         startParent = transform.parent;
         transform.SetParent(dragParent);
@@ -39,7 +39,7 @@ public class DragHandler : MonoBehaviour , IDragHandler, IEndDragHandler , IBegi
     public void OnEndDrag(PointerEventData eventData)   //Interfaz de IEndDragHandler
     {
         Debug.Log("ONENDDRAG");
-        objectDragging = null;
+        itemDragging = null;
 
         if(transform.parent == dragParent)
         {
