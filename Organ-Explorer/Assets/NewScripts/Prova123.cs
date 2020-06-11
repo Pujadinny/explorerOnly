@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RespawnSalaPlataformasVolants : MonoBehaviour
+public class Prova123 : MonoBehaviour
 {
     public Transform pleyer;
     public Transform respawnPoint;
 
-    public void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter(Collider other) //Al tocar amb el collider del respawn
     {
-        Debug.Log("entra guarra");
         pleyer.transform.position = respawnPoint.transform.position; //La posició del jugador passa ser la posició de la posició de respawn
-
     }
 }
+
