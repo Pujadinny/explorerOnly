@@ -641,6 +641,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 0}
+  SlotCor: {fileID: 723461859}
+  SlotPulmo: {fileID: 498739763}
+  SlotCervell: {fileID: 482501937}
+  SlotFetge: {fileID: 565801635}
+  SlotIntestiGros: {fileID: 501860411}
+  SlotIntestiPrim: {fileID: 419921501}
+  cor: {fileID: 1008539273}
+  pulmo: {fileID: 1601478584}
+  cervell: {fileID: 249169544}
+  fetge: {fileID: 1038724987}
+  intestiGros: {fileID: 1163583924}
+  intestiPrim: {fileID: 1276452039}
 --- !u!114 &419921504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1074,6 +1086,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 0}
+  SlotCor: {fileID: 723461859}
+  SlotPulmo: {fileID: 498739763}
+  SlotCervell: {fileID: 482501937}
+  SlotFetge: {fileID: 565801635}
+  SlotIntestiGros: {fileID: 501860411}
+  SlotIntestiPrim: {fileID: 419921501}
+  cor: {fileID: 1008539273}
+  pulmo: {fileID: 1601478584}
+  cervell: {fileID: 249169544}
+  fetge: {fileID: 1038724987}
+  intestiGros: {fileID: 1163583924}
+  intestiPrim: {fileID: 1276452039}
 --- !u!114 &482501940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1161,6 +1185,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 0}
+  SlotCor: {fileID: 723461859}
+  SlotPulmo: {fileID: 498739763}
+  SlotCervell: {fileID: 482501937}
+  SlotFetge: {fileID: 565801635}
+  SlotIntestiGros: {fileID: 501860411}
+  SlotIntestiPrim: {fileID: 419921501}
+  cor: {fileID: 1008539273}
+  pulmo: {fileID: 1601478584}
+  cervell: {fileID: 249169544}
+  fetge: {fileID: 1038724987}
+  intestiGros: {fileID: 1163583924}
+  intestiPrim: {fileID: 1276452039}
 --- !u!114 &498739766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1248,6 +1284,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 0}
+  SlotCor: {fileID: 723461859}
+  SlotPulmo: {fileID: 498739763}
+  SlotCervell: {fileID: 482501937}
+  SlotFetge: {fileID: 565801635}
+  SlotIntestiGros: {fileID: 501860411}
+  SlotIntestiPrim: {fileID: 419921501}
+  cor: {fileID: 1008539273}
+  pulmo: {fileID: 1601478584}
+  cervell: {fileID: 249169544}
+  fetge: {fileID: 1038724987}
+  intestiGros: {fileID: 1163583924}
+  intestiPrim: {fileID: 1276452039}
 --- !u!114 &501860414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1335,6 +1383,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 0}
+  SlotCor: {fileID: 723461859}
+  SlotPulmo: {fileID: 498739763}
+  SlotCervell: {fileID: 482501937}
+  SlotFetge: {fileID: 565801635}
+  SlotIntestiGros: {fileID: 501860411}
+  SlotIntestiPrim: {fileID: 419921501}
+  cor: {fileID: 1008539273}
+  pulmo: {fileID: 1601478584}
+  cervell: {fileID: 249169544}
+  fetge: {fileID: 1038724987}
+  intestiGros: {fileID: 1163583924}
+  intestiPrim: {fileID: 1276452039}
 --- !u!114 &565801638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1422,6 +1482,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 0}
+  SlotCor: {fileID: 723461859}
+  SlotPulmo: {fileID: 498739763}
+  SlotCervell: {fileID: 482501937}
+  SlotFetge: {fileID: 565801635}
+  SlotIntestiGros: {fileID: 501860411}
+  SlotIntestiPrim: {fileID: 419921501}
+  cor: {fileID: 1008539273}
+  pulmo: {fileID: 1601478584}
+  cervell: {fileID: 249169544}
+  fetge: {fileID: 1038724987}
+  intestiGros: {fileID: 1163583924}
+  intestiPrim: {fileID: 1276452039}
 --- !u!114 &723461862
 MonoBehaviour:
   m_ObjectHideFlags: 0

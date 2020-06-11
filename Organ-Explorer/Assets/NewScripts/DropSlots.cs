@@ -10,17 +10,21 @@ public class DropSlots : MonoBehaviour, IDropHandler //Interfaces que es necessi
   //  public GameObject item1;
 
     //slots 
-   /* public GameObject Slot1;
-    public GameObject Slot2;
-    public GameObject Slot3;
-    public GameObject Slot4;*/
+    public GameObject SlotCor;
+    public GameObject SlotPulmo;
+    public GameObject SlotCervell;
+    public GameObject SlotFetge;
+    public GameObject SlotIntestiGros;
+    public GameObject SlotIntestiPrim;
 
-   
-    
-            
+    public GameObject cor;
+    public GameObject pulmo;
+    public GameObject cervell;
+    public GameObject fetge;
+    public GameObject intestiGros;
+    public GameObject intestiPrim;
 
-
- 
+       
 
     public void OnDrop(PointerEventData eventData) //funció que deixa caure el objecte 
     {
@@ -32,6 +36,35 @@ public class DropSlots : MonoBehaviour, IDropHandler //Interfaces que es necessi
             Debug.Log(item.transform.parent);
             item.transform.position = transform.position; //finalment aquest objecte si coinxideix amb la cassella i el tranformem en fill li donem la possicio que té LA CASSELLA.
             Debug.Log(item);
+
+            if (SlotCor.transform.position == cor.transform.position)
+            {
+                Debug.Log("Cor ben posat");
+            }
+            else if (SlotPulmo.transform.position == pulmo.transform.position)
+            {
+                Debug.Log("Pulmo ben posat");
+            }
+            else if (SlotCervell.transform.position == cervell.transform.position)
+            {
+                Debug.Log("Cervell ben posat");
+            }
+            else if (SlotFetge.transform.position == fetge.transform.position)
+            {
+                Debug.Log("Fetge ben posat");
+            }
+            else if (SlotIntestiGros.transform.position == intestiGros.transform.position)
+            {
+                Debug.Log("ntestiGros ben posat");
+            }
+            else if (SlotIntestiPrim.transform.position == intestiPrim.transform.position)
+            {
+                Debug.Log("intestiPrim ben posat");
+            }
+            else 
+            {
+                Debug.Log("Posicio Incorrecte");
+            }
             
         }
         
