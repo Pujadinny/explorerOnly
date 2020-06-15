@@ -23,7 +23,7 @@ public class DropSlots : MonoBehaviour, IDropHandler //Interfaces que es necessi
     public GameObject fetge;
     public GameObject intestiGros;
     public GameObject intestiPrim;
-
+    public GameObject llumina;
     //public Light llum1;
     //public Light llum2;
 
@@ -32,10 +32,10 @@ public class DropSlots : MonoBehaviour, IDropHandler //Interfaces que es necessi
 
     public void Start()
     {
-         //llum1 = GetComponent<Light>();
-         //llum2 = GetComponent<Light>();
+        //llum1 = GetComponent<Light>();
+        //llum2 = GetComponent<Light>();
 
-                
+        
     }
 
 
