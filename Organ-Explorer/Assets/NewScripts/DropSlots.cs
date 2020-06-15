@@ -7,7 +7,7 @@ public class DropSlots : MonoBehaviour, IDropHandler //Interfaces que es necessi
 {
      //items
     public GameObject item; // variable que fara el objecte (sprite) que sera col·locat quant fagui la funcio de OnEndDrag
-  //  public GameObject item1;
+    //  public GameObject item1;
 
     //slots 
     public GameObject SlotCor;
@@ -16,7 +16,7 @@ public class DropSlots : MonoBehaviour, IDropHandler //Interfaces que es necessi
     public GameObject SlotFetge;
     public GameObject SlotIntestiGros;
     public GameObject SlotIntestiPrim;
-
+    // Objectes
     public GameObject cor;
     public GameObject pulmo;
     public GameObject cervell;
@@ -24,7 +24,25 @@ public class DropSlots : MonoBehaviour, IDropHandler //Interfaces que es necessi
     public GameObject intestiGros;
     public GameObject intestiPrim;
 
-       
+    //public Light llum1;
+    //public Light llum2;
+
+    // public bool Onlux = false; 
+    public Llum hola;
+
+    public void Start()
+    {
+         //llum1 = GetComponent<Light>();
+         //llum2 = GetComponent<Light>();
+
+                
+    }
+
+
+  
+
+
+
 
     public void OnDrop(PointerEventData eventData) //funció que deixa caure el objecte 
     {
@@ -37,9 +55,10 @@ public class DropSlots : MonoBehaviour, IDropHandler //Interfaces que es necessi
             item.transform.position = transform.position; //finalment aquest objecte si coinxideix amb la cassella i el tranformem en fill li donem la possicio que té LA CASSELLA.
             Debug.Log(item);
 
-            if (SlotCor.transform.position == cor.transform.position)
+            if (SlotCor.transform.position == cor.transform.position)  //condicio que fa que els organs et diguin si estan ben posats o no
             {
                 Debug.Log("Cor ben posat");
+
             }
             else if (SlotPulmo.transform.position == pulmo.transform.position)
             {
@@ -55,23 +74,29 @@ public class DropSlots : MonoBehaviour, IDropHandler //Interfaces que es necessi
             }
             else if (SlotIntestiGros.transform.position == intestiGros.transform.position)
             {
-                Debug.Log("ntestiGros ben posat");
+                Debug.Log("IntestiGros ben posat");
             }
             else if (SlotIntestiPrim.transform.position == intestiPrim.transform.position)
             {
-                Debug.Log("intestiPrim ben posat");
+                Debug.Log("IntestiPrim ben posat");
             }
             else 
             {
-                Debug.Log("Posicio Incorrecte");
+             
+
+
+
+                Debug.Log("Posicio Incorrecte");  // posi incorrecte
+              
             }
             
         }
-        
+      
 
     }
 
-   void Update() //funció Update
+
+    void Update() //funció Update
     {
         if (item != null && item.transform.parent != transform) //condicio que el que fa és dirli al Item (sprite) que si no és null el Item no es moura d'on esta i no tampoc sera fill de res a a menys que sigui que te el "TAG"
         {
@@ -81,4 +106,6 @@ public class DropSlots : MonoBehaviour, IDropHandler //Interfaces que es necessi
 
 
     }
+
+
 }
