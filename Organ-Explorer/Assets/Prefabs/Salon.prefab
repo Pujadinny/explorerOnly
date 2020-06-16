@@ -181,6 +181,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7689521147492152564}
     m_Modifications:
+    - target: {fileID: 134510, guid: b1bb41cfad48c59448bccfc5e40a4913, type: 3}
+      propertyPath: m_Name
+      value: Light Green
+      objectReference: {fileID: 0}
     - target: {fileID: 168882, guid: b1bb41cfad48c59448bccfc5e40a4913, type: 3}
       propertyPath: m_Name
       value: Desk Lamp GREEN
@@ -264,6 +268,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7689521147492152564}
     m_Modifications:
+    - target: {fileID: 125438, guid: 7be546959bc46ec46928ed32ee1d447c, type: 3}
+      propertyPath: m_Name
+      value: Light Red
+      objectReference: {fileID: 0}
     - target: {fileID: 142052, guid: 7be546959bc46ec46928ed32ee1d447c, type: 3}
       propertyPath: m_Name
       value: Desk Lamp RED

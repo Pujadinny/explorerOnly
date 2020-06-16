@@ -23,23 +23,64 @@ public class DropSlots : MonoBehaviour, IDropHandler //Interfaces que es necessi
     public GameObject fetge;
     public GameObject intestiGros;
     public GameObject intestiPrim;
-    public GameObject llumina;
-    //public Light llum1;
-    //public Light llum2;
 
-    // public bool Onlux = false; 
-    public Llum hola;
+
+    //INCORRECTE
+     public GameObject luxRed;           //llum VERMELLA 
+      public GameObject luxGreen;         //LLUM VERDE
+      public bool onLux = false;          // booleana que permet canviar de encès i apagat
+
+
+      public void Start()
+      {
+          luxRed.SetActive(false); //definir si el objecte esta encès o apagat
+          luxGreen.SetActive(false); //definir si el objecte esta encès o apagat
+      }
+
+
+    public void LUXGAMING()
+      {
+          if (!onLux)
+          {
+              luxRed.SetActive(true);
+              luxGreen.SetActive(true);
+              onLux = true;
+          }
+
+          else if (onLux)
+          {
+
+              luxRed.SetActive(false);
+              luxGreen.SetActive(false);
+              onLux = false;
+          }
+
+      }
+
+
+    public void ApagatRed()
+    {
+            luxRed.SetActive(false);
+    }
+
+    public void ApagatVerde()
+    {
+
+            luxGreen.SetActive(false);
+
+    }
+
+  /*public Llum rgb;
+
+
 
     public void Start()
     {
-        //llum1 = GetComponent<Light>();
-        //llum2 = GetComponent<Light>();
-
-        
-    }
+        rgb = GameObject.FindGameObjectWithTag("LLUM").GetComponent <Llum>();
+        rgb.Luz(gameObject);
+    } */
 
 
-  
 
 
 
@@ -57,39 +98,50 @@ public class DropSlots : MonoBehaviour, IDropHandler //Interfaces que es necessi
 
             if (SlotCor.transform.position == cor.transform.position)  //condicio que fa que els organs et diguin si estan ben posats o no
             {
-                Debug.Log("Cor ben posat");
-
+                Debug.Log("Cor ben posat"); //si ho esta llavors fes un log que digui que el "Cor està ben posat"
+                luxGreen.SetActive(true);
+                Invoke("ApagatVerde", 3);
             }
-            else if (SlotPulmo.transform.position == pulmo.transform.position)
+            else if (SlotPulmo.transform.position == pulmo.transform.position )
             {
                 Debug.Log("Pulmo ben posat");
+                luxGreen.SetActive(true);
+                Invoke("ApagatVerde", 3);
             }
             else if (SlotCervell.transform.position == cervell.transform.position)
             {
                 Debug.Log("Cervell ben posat");
+                luxGreen.SetActive(true);
+                Invoke("ApagatVerde", 3);
             }
             else if (SlotFetge.transform.position == fetge.transform.position)
             {
                 Debug.Log("Fetge ben posat");
+                luxGreen.SetActive(true);
+                Invoke("ApagatVerde", 3);
             }
             else if (SlotIntestiGros.transform.position == intestiGros.transform.position)
             {
                 Debug.Log("IntestiGros ben posat");
+                luxGreen.SetActive(true);
+                Invoke("ApagatVerde", 3);
             }
             else if (SlotIntestiPrim.transform.position == intestiPrim.transform.position)
             {
                 Debug.Log("IntestiPrim ben posat");
+                luxGreen.SetActive(true);
+                Invoke("ApagatVerde", 3);
             }
             else 
             {
-             
 
 
-
+                luxRed.SetActive(true);
                 Debug.Log("Posicio Incorrecte");  // posi incorrecte
-              
+                Invoke("ApagatRed", 3);
+
             }
-            
+
         }
       
 

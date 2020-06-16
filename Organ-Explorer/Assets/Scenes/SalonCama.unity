@@ -540,10 +540,10 @@ RectTransform:
   m_Father: {fileID: 1304109394}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.0084915, y: -172.52}
-  m_SizeDelta: {x: 980.98, y: 345}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.0084915, y: -1.495}
+  m_SizeDelta: {x: 981, y: 532.99}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &200895255
 MonoBehaviour:
@@ -702,8 +702,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7, y: -132}
-  m_SizeDelta: {x: 65, y: 65}
+  m_AnchoredPosition: {x: 33, y: -181}
+  m_SizeDelta: {x: 75, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &419921503
 MonoBehaviour:
@@ -730,8 +730,9 @@ MonoBehaviour:
   fetge: {fileID: 1038724987}
   intestiGros: {fileID: 1163583924}
   intestiPrim: {fileID: 1276452039}
-  llumina: {fileID: 0}
-  hola: {fileID: 0}
+  luxRed: {fileID: 1055259496}
+  luxGreen: {fileID: 912707494}
+  onLux: 0
 --- !u!114 &419921504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1149,8 +1150,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 9, y: 97}
-  m_SizeDelta: {x: 65, y: 65}
+  m_AnchoredPosition: {x: 9, y: 204}
+  m_SizeDelta: {x: 75, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &482501939
 MonoBehaviour:
@@ -1177,8 +1178,9 @@ MonoBehaviour:
   fetge: {fileID: 1038724987}
   intestiGros: {fileID: 1163583924}
   intestiPrim: {fileID: 1276452039}
-  llumina: {fileID: 0}
-  hola: {fileID: 0}
+  luxRed: {fileID: 1055259496}
+  luxGreen: {fileID: 912707494}
+  onLux: 0
 --- !u!114 &482501940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1296,18 +1298,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 485340826}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: Luz
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Light, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &485340826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1379,8 +1370,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8, y: 13}
-  m_SizeDelta: {x: 65, y: 65}
+  m_AnchoredPosition: {x: 17, y: 86}
+  m_SizeDelta: {x: 75, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &498739765
 MonoBehaviour:
@@ -1407,8 +1398,9 @@ MonoBehaviour:
   fetge: {fileID: 1038724987}
   intestiGros: {fileID: 1163583924}
   intestiPrim: {fileID: 1276452039}
-  llumina: {fileID: 0}
-  hola: {fileID: 0}
+  luxRed: {fileID: 1055259496}
+  luxGreen: {fileID: 912707494}
+  onLux: 0
 --- !u!114 &498739766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1480,8 +1472,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6, y: -56}
-  m_SizeDelta: {x: 65, y: 65}
+  m_AnchoredPosition: {x: 29, y: -73}
+  m_SizeDelta: {x: 75, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &501860413
 MonoBehaviour:
@@ -1508,8 +1500,9 @@ MonoBehaviour:
   fetge: {fileID: 1038724987}
   intestiGros: {fileID: 1163583924}
   intestiPrim: {fileID: 1276452039}
-  llumina: {fileID: 0}
-  hola: {fileID: 0}
+  luxRed: {fileID: 1055259496}
+  luxGreen: {fileID: 912707494}
+  onLux: 0
 --- !u!114 &501860414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1581,8 +1574,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -84, y: 12}
-  m_SizeDelta: {x: 65, y: 65}
+  m_AnchoredPosition: {x: -52, y: 12}
+  m_SizeDelta: {x: 75, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &565801637
 MonoBehaviour:
@@ -1609,8 +1602,9 @@ MonoBehaviour:
   fetge: {fileID: 1038724987}
   intestiGros: {fileID: 1163583924}
   intestiPrim: {fileID: 1276452039}
-  llumina: {fileID: 0}
-  hola: {fileID: 0}
+  luxRed: {fileID: 1055259496}
+  luxGreen: {fileID: 912707494}
+  onLux: 0
 --- !u!114 &565801638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1682,8 +1676,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 105, y: 30}
-  m_SizeDelta: {x: 65, y: 65}
+  m_AnchoredPosition: {x: 132, y: 111}
+  m_SizeDelta: {x: 75, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &723461861
 MonoBehaviour:
@@ -1710,8 +1704,9 @@ MonoBehaviour:
   fetge: {fileID: 1038724987}
   intestiGros: {fileID: 1163583924}
   intestiPrim: {fileID: 1276452039}
-  llumina: {fileID: 0}
-  hola: {fileID: 0}
+  luxRed: {fileID: 1055259496}
+  luxGreen: {fileID: 912707494}
+  onLux: 0
 --- !u!114 &723461862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1921,6 +1916,12 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &912707494 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1988566718538591118, guid: b1c412c6b934af045bdef7f4b261455e,
+    type: 3}
+  m_PrefabInstance: {fileID: 8850408532014630811}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1005363760
 GameObject:
   m_ObjectHideFlags: 0
@@ -2301,6 +2302,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1038724987}
   m_CullTransparentMesh: 0
+--- !u!1 &1055259496 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4708485536085636113, guid: b1c412c6b934af045bdef7f4b261455e,
+    type: 3}
+  m_PrefabInstance: {fileID: 8850408532014630811}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1163583924
 GameObject:
   m_ObjectHideFlags: 0
@@ -3072,6 +3079,11 @@ PrefabInstance:
       propertyPath: m_Intensity
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1988566718528611834, guid: b1c412c6b934af045bdef7f4b261455e,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2163548392795456812, guid: b1c412c6b934af045bdef7f4b261455e,
         type: 3}
       propertyPath: llum
@@ -3161,6 +3173,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 48.548004
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708485536085636113, guid: b1c412c6b934af045bdef7f4b261455e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5767199643467951602, guid: b1c412c6b934af045bdef7f4b261455e,
         type: 3}

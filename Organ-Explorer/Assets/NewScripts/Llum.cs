@@ -4,26 +4,26 @@ using UnityEngine;
 
 public class Llum : MonoBehaviour
 {
-    public Light llum;
+    public GameObject llum;
     public bool Onllum = false;
 
     public void Start()
     {
 
-        Luz(llum);
+        Luz(gameObject);
         
     }
 
-    public void Luz (Light llinterna)
+    public void Luz (GameObject a)
     {
-        if (llinterna  && !Onllum)
+        if (a && !Onllum)
         {
-            llum.enabled = true;
+            llum.SetActive (true);
             Onllum = true;
         }
-        else if (llinterna && Onllum)
+        else if (a && Onllum)
         {
-            llum.enabled = false;
+            llum.SetActive (false);
             Onllum = false;
         }
 
