@@ -44,7 +44,8 @@ public class DragHandler : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginD
         Debug.Log("OnEndDrag");
         itemDragging = null; //el objecte selecionat sempre sera no
         if (transform.parent == dragParent ) // a menys.. si la seva posició és equivalent al dragParent ... i el dragParent busca el objecte que te el Tag "Object"
-        { //si passa la condició...
+        {   //si passa la condició...
+
             transform.position = posiStart; //la posicio actual passa a ser passa a ser el primer punt on es queda. EXEMPLE: és a dir si en el inspector surt x = 150'4 y = 1'412 z=1 doncs per ell és 0 TOT. Despres si tu el mous a la posi X=250 y = 31 z= 21  despres de fer funcio OnDrag sera 0 per ell.
             transform.SetParent(startParent); //finalment el que fa és aquella posicio passa a ser fill de el starParent
             Debug.Log(posiStart);

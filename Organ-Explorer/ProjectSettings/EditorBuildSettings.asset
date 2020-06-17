@@ -8,22 +8,22 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Menu.unity
     guid: 5710677b80c9e4d4eb9eb9a7c0df94fb
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Register.unity
     guid: d80aedde1a3ff37458632c4dc113cac4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Login.unity
     guid: e42017afd974a3e4aa0c8228653f458e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TheOrganExplorer.unity
     guid: 8988cfef1cc37f145b11233e73eabc79
   - enabled: 1
     path: Assets/Scenes/SalonCama.unity
     guid: 1a9f6d0b34086bb42b45f03c4c797220
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/FINAL.unity
     guid: 60a3cc9723d767c479b15c468b1691f8
   m_configObjects: {}

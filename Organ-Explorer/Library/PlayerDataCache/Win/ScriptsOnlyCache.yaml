@@ -5,9 +5,8 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - DragHandler
     - DropSlots
-    - InventarioObjetoRecogible
     - ItemPool
-    - OrgansInstantinate
+    - Light
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -19,6 +18,7 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.PhysicsRaycaster
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
@@ -61,28 +61,24 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10264}
     - Class: 114
-      Script: {instanceID: 10636}
+      Script: {instanceID: 10392}
     - Class: 114
       Script: {instanceID: 10814}
     - Class: 114
       Script: {instanceID: 11186}
     - Class: 114
-      Script: {instanceID: 11638}
+      Script: {instanceID: 11640}
     - Class: 114
-      Script: {instanceID: 12324}
+      Script: {instanceID: 12328}
     - Class: 114
-      Script: {instanceID: 12348}
+      Script: {instanceID: 12366}
     - Class: 114
-      Script: {instanceID: 12362}
+      Script: {instanceID: 12992}
     - Class: 114
-      Script: {instanceID: 12988}
+      Script: {instanceID: 38224}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
-      Script: {instanceID: 0}
-    - Class: 135
-      Script: {instanceID: 0}
-    - Class: 136
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -591,10 +587,16 @@ ScriptsOnlyBuild:
     className: CinemachineTriggerAction
   - hash:
       serializedVersion: 2
-      Hash: 87012adc37f81cdf1ed059308467ba68
+      Hash: b2636f10caa879ad47d1e9b8c5b020bd
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DropSlots
+  - hash:
+      serializedVersion: 2
+      Hash: 0167e45dcbf629b45cafe97104b9e816
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Prova123
   - hash:
       serializedVersion: 2
       Hash: e9389e944eb81a3a9df56fcdb09ce6a9
@@ -939,6 +941,12 @@ ScriptsOnlyBuild:
     className: PlataformActivation
   - hash:
       serializedVersion: 2
+      Hash: 838ff2ff0b38fc0579e1b0b7e5a59416
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Llum
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1249,6 +1257,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 0edaadbbb9e7e295743e7325723ae107
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Light
   platform: 5
   scenePathNames:
   - Assets/Scenes/SalonCama.unity

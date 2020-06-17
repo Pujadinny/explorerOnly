@@ -24,11 +24,22 @@ public class DropSlots : MonoBehaviour, IDropHandler //Interfaces que es necessi
     public GameObject intestiGros;
     public GameObject intestiPrim;
 
+    public Light light;
+
 
     //INCORRECTE
      public GameObject luxRed;           //llum VERMELLA 
       public GameObject luxGreen;         //LLUM VERDE
-      public bool onLux = false;          // booleana que permet canviar de encès i apagat
+
+
+    /*
+    public bool corEnces = false;
+    public bool pulmoOn = false;          // booleana que permet canviar de encès i apagat
+    public bool cervellOn = false;
+    public bool fetgeOn = false;
+    public bool intestiGrosOn = false;
+    public bool intestiPrimOn = false;
+    */
 
 
       public void Start()
@@ -38,49 +49,17 @@ public class DropSlots : MonoBehaviour, IDropHandler //Interfaces que es necessi
       }
 
 
-    public void LUXGAMING()
-      {
-          if (!onLux)
-          {
-              luxRed.SetActive(true);
-              luxGreen.SetActive(true);
-              onLux = true;
-          }
-
-          else if (onLux)
-          {
-
-              luxRed.SetActive(false);
-              luxGreen.SetActive(false);
-              onLux = false;
-          }
-
-      }
-
-
-    public void ApagatRed()
+    public void ApagatRed()    //funcio APAGAT RED
     {
-            luxRed.SetActive(false);
+            luxRed.SetActive(false);            // desactiva el GameObject luxRed 
     }
 
-    public void ApagatVerde()
+    public void ApagatVerde()    //funcio APAGAT GREEN
     {
 
-            luxGreen.SetActive(false);
+            luxGreen.SetActive(false); // desactiva el GameObject luxGreen
 
     }
-
-  /*public Llum rgb;
-
-
-
-    public void Start()
-    {
-        rgb = GameObject.FindGameObjectWithTag("LLUM").GetComponent <Llum>();
-        rgb.Luz(gameObject);
-    } */
-
-
 
 
 
@@ -95,51 +74,62 @@ public class DropSlots : MonoBehaviour, IDropHandler //Interfaces que es necessi
             Debug.Log(item.transform.parent);
             item.transform.position = transform.position; //finalment aquest objecte si coinxideix amb la cassella i el tranformem en fill li donem la possicio que té LA CASSELLA.
             Debug.Log(item);
+            
 
-            if (SlotCor.transform.position == cor.transform.position)  //condicio que fa que els organs et diguin si estan ben posats o no
+            if (SlotCor.transform.position == cor.transform.position & !light.corEnces)  //condicio que fa que els organs et diguin si estan ben posats o no
             {
                 Debug.Log("Cor ben posat"); //si ho esta llavors fes un log que digui que el "Cor està ben posat"
                 luxGreen.SetActive(true);
-                Invoke("ApagatVerde", 3);
+                Invoke("ApagatVerde", 2);
+                light.corEnces = true;
             }
-            else if (SlotPulmo.transform.position == pulmo.transform.position )
+
+            else if (SlotPulmo.transform.position == pulmo.transform.position & !light.pulmoOn)  //sino si el pulmo es correcte el SLOT de pulmo ha de ser el mateix que el del Item Pulmo
             {
-                Debug.Log("Pulmo ben posat");
-                luxGreen.SetActive(true);
-                Invoke("ApagatVerde", 3);
+                Debug.Log("Pulmo ben posat");                   //DEGUB "Pulmo ben posat
+                luxGreen.SetActive(true);                       // La llum s'activa
+                Invoke("ApagatVerde", 2);                       // Invoca a la funcio APAGAR VERDE fa un delay de 2 seg
+                light.pulmoOn = true;                           // booleana de light
+                
             }
-            else if (SlotCervell.transform.position == cervell.transform.position)
+
+            else if (SlotCervell.transform.position == cervell.transform.position & !light.cervellOn)   //sino si el cervell és correcte el SLOT de cervell i el item cervell  han de ser el mateix 
             {
                 Debug.Log("Cervell ben posat");
-                luxGreen.SetActive(true);
-                Invoke("ApagatVerde", 3);
+                luxGreen.SetActive(true);                       // La llum s'activa
+                Invoke("ApagatVerde", 2);                       // Invoca a la funcio APAGAR VERDE fa un delay de 2 seg
+                light.cervellOn = true;                         // booleana de light
             }
-            else if (SlotFetge.transform.position == fetge.transform.position)
+
+            else if (SlotFetge.transform.position == fetge.transform.position & !light.fetgeOn)  //sino si el fetge  es correcte el SLOT del fetge ha de ser el matiex que el item
             {
-                Debug.Log("Fetge ben posat");
-                luxGreen.SetActive(true);
-                Invoke("ApagatVerde", 3);
+                Debug.Log("Fetge ben posat");                       //DEBUG "FETGE BEN POSAT"
+                luxGreen.SetActive(true);                          // La llum s'activa
+                Invoke("ApagatVerde", 2);                       // Invoca a la funcio APAGAR VERDE fa un delay de 2 seg
+                light.fetgeOn = true;                           // booleana de light
             }
-            else if (SlotIntestiGros.transform.position == intestiGros.transform.position)
+
+            else if (SlotIntestiGros.transform.position == intestiGros.transform.position & !light.intestiGrosOn)   //sino si el intestiGros es correcte el SLOT Intesti Gros ha de considir amb el item Intesti gros
             {
                 Debug.Log("IntestiGros ben posat");
-                luxGreen.SetActive(true);
-                Invoke("ApagatVerde", 3);
+                luxGreen.SetActive(true);                         // La llum s'activa
+                Invoke("ApagatVerde", 2);                        // Invoca a la funcio APAGAR VERDE fa un delay de 2 seg
+                light.intestiGrosOn = true;                        // booleana de light
             }
-            else if (SlotIntestiPrim.transform.position == intestiPrim.transform.position)
+
+            else if (SlotIntestiPrim.transform.position == intestiPrim.transform.position & !light.intestiPrimOn)    //sino si el intesti Prim és correcte el SLOT 
             {
                 Debug.Log("IntestiPrim ben posat");
-                luxGreen.SetActive(true);
-                Invoke("ApagatVerde", 3);
+                luxGreen.SetActive(true);                        // La llum s'activa
+                Invoke("ApagatVerde", 2);                        // Invoca a la funcio APAGAR VERDE fa un delay de 2 seg
+                light.intestiPrimOn = true;                         // booleana de light
             }
-            else 
+
+            else //sino ...
             {
-
-
-                luxRed.SetActive(true);
-                Debug.Log("Posicio Incorrecte");  // posi incorrecte
-                Invoke("ApagatRed", 3);
-
+                luxRed.SetActive(true);                         //llumm roja activated
+                Invoke("ApagatRed", 2);                         // Invoca a la funcio APAGAR VERDE fa un delay de 2 seg
+                Debug.Log("Posicio Incorrecte");                //DEBUG " posi incorrecte"
             }
 
         }
@@ -152,8 +142,8 @@ public class DropSlots : MonoBehaviour, IDropHandler //Interfaces que es necessi
     {
         if (item != null && item.transform.parent != transform) //condicio que el que fa és dirli al Item (sprite) que si no és null el Item no es moura d'on esta i no tampoc sera fill de res a a menys que sigui que te el "TAG"
         {
-            Debug.Log("hola");
-            item = null; //Llavors el item si que es correcte
+            Debug.Log("hola");                //DEGUG "hola"
+            item = null;                    //Llavors el item si que es correcte
         }
 
 
