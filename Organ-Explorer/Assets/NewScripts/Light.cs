@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 // AQUEST SCIRPT MAY S'HA DE ENSENYAR A L'ALEX .... SI ESTAS LLEGIN AIXÒ NOO HAS LLEGIT RES !!!!!!!!
 public class Light : MonoBehaviour
@@ -12,7 +13,7 @@ public class Light : MonoBehaviour
     public bool fetgeOn;
     public bool intestiGrosOn;
     public bool intestiPrimOn;
-
+    
    //definico de les booleans
     void Start()
     {
@@ -23,6 +24,15 @@ public class Light : MonoBehaviour
     fetgeOn = false;
     intestiGrosOn = false;
     intestiPrimOn = false;
+    }
 
-    }   
+    public void Update()
+    {
+        if (corEnces & pulmoOn & cervellOn & fetgeOn & intestiGrosOn & intestiPrimOn == true)
+        {
+            SceneManager.LoadScene("FINAL");
+        }
+    }
+
+
 }

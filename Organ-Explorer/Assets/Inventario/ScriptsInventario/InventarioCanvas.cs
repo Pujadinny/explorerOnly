@@ -9,7 +9,6 @@ public class InventarioCanvas : MonoBehaviour {
     private void Start ()
     {
         Inventario.SetActive (false);
-        Cursor.visible = false;
     }
     void Update ()
     {
@@ -18,12 +17,7 @@ public class InventarioCanvas : MonoBehaviour {
 
             Inventario.SetActive(!Inventario.activeInHierarchy);
             //Cursor.visible = false ? true: false;
-            if (Cursor.visible == false)
-            {
-                Cursor.visible = true;
-            }
-            else               
-                Cursor.visible = false;
+            
         }
 
       
